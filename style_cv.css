@@ -1,0 +1,522 @@
+/* I've 2 fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto|Playfair+Display" rel="stylesheet">');
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* CONTACT.html page */
+
+
+/* menu settings and animation */
+
+
+/* resource: https://www.youtube.com/watch?v=F-mvXKKoSCU; */
+
+#menu {
+    width: 35px;
+    height: 30px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+}
+
+.bar {
+    height: 5px;
+    width: 100%;
+    background-color: black;
+    display: block;
+    border-radius: 5px;
+    transition: 0.4s ease;
+}
+
+#bar1 {
+    transform: translateY(-4px);
+}
+
+#bar3 {
+    transform: translateY(4px);
+}
+
+.nav li a {
+    color: rgb(12, 12, 12);
+    text-shadow: 5px 5px 10px black;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav li a:hover {
+    font-weight: bolder;
+}
+
+.nav li {
+    list-style: none;
+    padding: 16px 0;
+}
+
+.nav {
+    padding: 0;
+    margin: 0 20px;
+    transition: 0.4s ease;
+    display: none;
+}
+
+.menu-bg,
+#menu-bar {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    background: radial-gradient(circle, white, rgb(167, 117, 117));
+    border-radius: 50%;
+    transition: 0.8s ease;
+}
+
+#menu-bar {
+    z-index: 2;
+}
+
+.change-bg {
+    width: 550px;
+    height: 540px;
+    transform: translate(-60%, -30%);
+}
+
+.change .bar {
+    background-color: white;
+}
+
+.change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+}
+
+.change #bar2 {
+    opacity: 0;
+}
+
+.change {
+    display: block;
+}
+
+img {
+    margin-left: 50px;
+}
+
+
+/* image on background (contact.html) */
+
+header {
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    background: url(https://picsum.photos/id/213/1600/800);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+}
+
+
+/* contact.html contact information in center page */
+
+.main h1 {
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contacts-title {
+    color: #746f6b;
+    margin-bottom: 13px;
+    font-size: 25px;
+    font-weight: 400;
+    margin-left: 550px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact-text {
+    color: rgb(10, 10, 10);
+    text-decoration: none;
+    padding-left: 28px;
+    line-height: 15px;
+    font-size: 25px;
+    font-weight: 550;
+    margin-left: 560px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.fas {
+    margin: 10px;
+    color: #ca5858;
+}
+
+address {
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* ball settings and  animation*/
+
+
+/* resource: https://www.youtube.com/watch?v=ghphLDzGVCA */
+
+.ball {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: #ca5858;
+    border-radius: 100%;
+    animation: dws-bounce 3s linear infinite, dws-moveLeft 25s linear infinite;
+}
+
+@keyframes dws-bounce {
+    0% {
+        bottom: 100%
+    }
+    25% {
+        bottom: 0;
+        width: 100px;
+        height: 100px;
+    }
+    30% {
+        bottom: 0;
+        width: 110px;
+        height: 25px;
+    }
+    35% {
+        bottom: 0;
+        width: 100px;
+        height: 110px;
+    }
+    70% {
+        bottom: 100%;
+    }
+    100% {
+        bottom: 100%;
+    }
+}
+
+@keyframes dws-moveLeft {
+    from {
+        left: 0;
+    }
+    to {
+        left: 100%
+    }
+}
+
+
+/* button settings and animations "contact me" button (contact page) */
+
+
+/* resource: https://www.youtube.com/watch?v=jgbDnDirM9s */
+
+.ddt {
+    position: absolute;
+    top: 83%;
+    left: 75%;
+}
+
+.butt {
+    border: 3px solid rgb(8, 8, 8);
+    font-size: 20px;
+    color: red;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 150px;
+    height: 50px;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    transition: .5s;
+    overflow: hidden;
+    border-radius: 20%;
+}
+
+.butt::before,
+.butt::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgb(143, 16, 16);
+    top: 0;
+    left: -100%;
+    opacity: .5;
+    transition: .3s;
+    z-index: -1;
+}
+
+.butt::after {
+    opacity: 1;
+    transition-delay: .2s;
+}
+
+.butt:hover {
+    color: #fff;
+}
+
+.butt:hover::before,
+.butt:hover::after {
+    left: 0;
+}
+
+
+/* PORTFOLIO1.html    */
+
+
+/* img carousel */
+
+section {
+    background: black;
+}
+
+
+/* name page settings and animation */
+
+h2 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 500px;
+    font-size: 40px;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.2em;
+}
+
+h2 span {
+    opacity: 0;
+    display: inline-block;
+    animation: animate 3s linear forwards;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotateY(90deg);
+        filter: blur(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateY(0deg);
+        filter: blur(0);
+    }
+}
+
+
+/* img settings */
+
+.carousel {
+    margin-top: -50px;
+    height: 750px;
+    perspective: 600px;
+}
+
+.carousel .carousel-item {
+    width: 400px;
+}
+
+.carousel .carousel-item img {
+    width: 100%;
+    border: 2px solid #fff;
+}
+
+.carousel .carousel-item h3 {
+    margin-top: -5px;
+    margin-left: 50px;
+    margin-right: -50px;
+    background: #fff;
+    color: #000;
+    box-sizing: border-box;
+    padding: 10px 5px;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+}
+
+
+/* button settings */
+
+
+/* resouce: https://www.youtube.com/watch?v=ex7jGbyFgpA */
+
+.but {
+    position: relative;
+    display: inline-block;
+    padding: 2px 60px;
+    color: #fff;
+    margin-left: 60px;
+    margin-top: 40px;
+    border-radius: 75px;
+    line-height: 55px;
+    text-align: center;
+    font-size: 24px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.but:hover {
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 1s;
+}
+
+.but span {
+    position: absolute;
+    display: block;
+}
+
+
+/* button strips */
+
+.but span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #2196f3);
+}
+
+.but:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+
+.but span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #2196f3);
+}
+
+.but:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+.but span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #2196f3);
+}
+
+.but:hover span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.but span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #2196f3);
+}
+
+.but:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+@media all and (max-width:927px) {
+    h2 {
+        margin-left: 300px;
+        font-size: 30px;
+        letter-spacing: 0.1em;
+    }
+    .main h1 {
+        margin-top: 20px;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 30px;
+        font-family: 'Roboto', sans-serif;
+    }
+    .contacts-title {
+        color: #746f6b;
+        margin-bottom: 13px;
+        font-size: 25px;
+        font-weight: 400;
+        margin-left: 550px;
+        font-family: 'Roboto', sans-serif;
+    }
+    .contact-text {
+        margin-left: 250px;
+    }
+    .fas {
+        margin-left: -300px;
+    }
+}
+
+@media all and (max-width:625px) {
+    header {
+        width: 120%;
+    }
+    .ddt {
+        top: 83%;
+        left: 55%;
+    }
+}
+
+@media all and (max-width:580px) {
+    h2 {
+        /* margin-top: 10px; */
+        margin-left: 200px;
+        font-size: 30px;
+        letter-spacing: 0.1em;
+    }
+    .carousel .carousel-item {
+        width: 300px;
+    }
+    .carousel {
+        perspective: 300px;
+    }
+    .carousel .carousel-item h3 {
+        font-size: 1em;
+    }
+    .contact-text {
+        margin-left: 50px;
+    }
+    .fas {
+        margin-left: -500px;
+    }
+}
+
+@media all and (max-width:460px) {
+    h2 {
+        margin-left: 50px;
+        font-size: 20px;
+        letter-spacing: 0.1em;
+    }
+    .carousel .carousel-item {
+        width: 250px;
+    }
+    .carousel {
+        perspective: 130px;
+    }
+}

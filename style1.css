@@ -1,0 +1,215 @@
+/* I've 2 fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto|Playfair+Display" rel="stylesheet">');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Background */
+
+#canvas1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url(https://picsum.photos/id/279/1600/800);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Form */
+
+
+/* resource: resource: https://www.youtube.com/watch?v=BKhoo6RSEDU */
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, .8);
+    box-shadow: 0 5px 10px #FA0505;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.box h2 {
+    margin: 0 0 40px;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+
+/* input */
+
+.box input {
+    padding: 10px 0;
+    margin-bottom: 30px;
+    font-size: 20px;
+    background: transparent;
+}
+
+
+/* input message */
+
+.box textarea {
+    height: 80px;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    background: transparent;
+}
+
+
+/* decoration inside input and message */
+
+.box input,
+.box textarea {
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgb(255, 0, 0);
+}
+
+.box input[type="submit"] {
+    border-bottom: none;
+    cursor: pointer;
+    background: rgb(255, 0, 0);
+    margin-bottom: 0;
+    text-transform: uppercase;
+    color: rgb(7, 7, 7);
+}
+
+.box form div {
+    position: relative;
+}
+
+.box form div label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    color: #999;
+    transition: .5s;
+    pointer-events: none;
+}
+
+
+/* go up name */
+
+.box input:focus~label,
+.box textarea:focus~label,
+.box input:valid~label,
+.box textarea:valid~label {
+    top: -12px;
+    left: 0;
+    color: rgb(255, 0, 0);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.box input:focus,
+.box textarea:focus,
+.box input:valid,
+.box textarea:valid {
+    border-bottom: 2px solid rgb(255, 0, 0);
+}
+
+
+/* button */
+
+.ddt {
+    position: absolute;
+    top: 96%;
+    right: -95%;
+}
+
+.butt {
+    border: 3px solid rgb(8, 8, 8);
+    font-size: 20px;
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 150px;
+    height: 50px;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    transition: .5s;
+    overflow: hidden;
+    border-radius: 10%;
+}
+
+.butt::before,
+.butt::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgb(143, 16, 16);
+    top: 0;
+    left: -100%;
+    opacity: .5;
+    transition: .3s;
+    z-index: -1;
+}
+
+.butt::after {
+    opacity: 1;
+    transition-delay: .2s;
+}
+
+.butt:hover {
+    color: #fff;
+}
+
+.butt:hover::before,
+.butt:hover::after {
+    left: 0;
+}
+
+.logo {
+    position: absolute;
+    box-sizing: border-box;
+}
+
+@media all and (max-width:1165px) {
+    .ddt {
+        top: 120%;
+        right: -55%;
+    }
+}
+
+@media all and (max-width:850px) {
+    .ddt {
+        right: -25%;
+    }
+}
+
+@media all and (max-width:630px) {
+    .ddt {
+        right: -5%;
+    }
+}
+
+@media all and (max-width:450px) {
+    .ddt {
+        right: 25%;
+    }
+    .box {
+        width: 320px;
+        padding: 10px;
+    }
+}
