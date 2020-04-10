@@ -1,4 +1,4 @@
-//for images in index.html
+//for images in index.html (bootstrap)
 $('.carousel').carousel({
     interval: 7000
 })

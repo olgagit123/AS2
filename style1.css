@@ -1,4 +1,4 @@
-/* I've 2 fonts */
+/* I've chosen 2 fonts */
 
 @import url('https://fonts.googleapis.com/css?family=Roboto|Playfair+Display" rel="stylesheet">');
 body {
@@ -9,7 +9,10 @@ body {
 }
 
 
-/* Background */
+/* CONTACT1.html */
+
+
+/* Background image*/
 
 #canvas1 {
     position: absolute;
@@ -23,10 +26,10 @@ body {
 }
 
 
-/* Form */
+/*"Get in touch" table */
 
 
-/* resource: resource: https://www.youtube.com/watch?v=BKhoo6RSEDU */
+/* source: https://www.youtube.com/watch?v=BKhoo6RSEDU */
 
 .box {
     position: absolute;
@@ -49,7 +52,7 @@ body {
 }
 
 
-/* input */
+/* get in touch input information*/
 
 .box input {
     padding: 10px 0;
@@ -59,7 +62,7 @@ body {
 }
 
 
-/* input message */
+/* get in touch input information message */
 
 .box textarea {
     height: 80px;
@@ -70,7 +73,7 @@ body {
 }
 
 
-/* decoration inside input and message */
+/* get in touch table  design */
 
 .box input,
 .box textarea {
@@ -105,7 +108,7 @@ body {
 }
 
 
-/* go up name */
+/* get in touch table effects*/
 
 .box input:focus~label,
 .box textarea:focus~label,
@@ -126,7 +129,7 @@ body {
 }
 
 
-/* button */
+/* "home" button settings */
 
 .ddt {
     position: absolute;
@@ -184,6 +187,9 @@ body {
     position: absolute;
     box-sizing: border-box;
 }
+
+
+/* Responsive pages */
 
 @media all and (max-width:1165px) {
     .ddt {

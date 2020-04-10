@@ -1,5 +1,5 @@
-// contact 2 page (contact2.html)
-// resource: https://www.youtube.com/watch?v=d620nV6bp0A
+// contact, second page (contact1.html)
+// source: https://www.youtube.com/watch?v=d620nV6bp0A
 
 const canvas = document.getElementById("canvas1");
 const ctx = canvas.getContext('2d');

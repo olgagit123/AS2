@@ -1,4 +1,4 @@
-    /*  fonts styles */
+    /* I've chosen 2 fonts */
     
     @import url('https://fonts.googleapis.com/css?family=Roboto|Playfair+Display" rel="stylesheet">');
     body {
@@ -19,7 +19,7 @@
         font-size: 40px;
         text-align: center;
     }
-    /* img settings  */
+    /* images' settings  */
     
     .carousel-inner {
         height: 600px;
@@ -40,7 +40,6 @@
         top: 2%;
         text-shadow: 5px 5px 10px black;
     }
-    /* name settings */
     
     h2 {
         text-align: right;
@@ -49,17 +48,18 @@
         margin-right: -95px;
         font-family: 'Playfair Display', serif;
     }
+    /* greeting settings */
     
     h3 {
         font-size: 50px;
         margin-top: -100px;
         margin-left: 120px;
         font-family: 'Playfair Display', serif;
-        /* I use this transition from https://www.youtube.com/watch?v=fMTBGWBr_sE */
+        /* source: https://www.youtube.com/watch?v=fMTBGWBr_sE */
         text-shadow: 1px 2px 1px white, -2px 3px 2px grey;
         transition: linear color 3s;
     }
-    /*Animation   */
+    /*images indicator animation */
     
     h3:hover {
         color: #F9ADB6;
@@ -72,7 +72,7 @@
     .carousel-indicators:hover {
         background-color: #62A4A4;
     }
-    /* icons settings and animation */
+    /*social network icons settings and animation */
     
     .icons a {
         height: 20px;
@@ -102,8 +102,8 @@
         margin-top: -70px;
     }
     /* PORTFOLIO.html */
-    /* resource: https://www.youtube.com/watch?v=ofcqdcLP5qM */
-    /*  img settings */
+    /* source: https://www.youtube.com/watch?v=ofcqdcLP5qM */
+    /* my image settings */
     
     section {
         background-image: url("img/portImg.JPG");
@@ -160,7 +160,7 @@
     .container:after {
         transform: translateX(195%) rotate(45deg);
     }
-    /* text inside image */
+    /*settings of the text which is appearing on the image */
     
     .context {
         position: absolute;
@@ -184,7 +184,7 @@
         transition: .5s;
         opacity: 0;
     }
-    /* button settings and animation inside img */
+    /* "my works" button settings and animation  */
     
     a.bt {
         position: absolute;
@@ -225,7 +225,7 @@
         opacity: 1;
         transition: .5s;
     }
-    /* for images animation*/
+    /*  image animation*/
     
     .boxImg:hover img {
         transform: rotate(-30deg) scale(2);
@@ -257,6 +257,7 @@
     .boxImg:hover {
         border: 5px inset rgb(14, 13, 13);
     }
+    /* Responsive pages */
     
     @media all and (max-width:927px) {
         h3 {
@@ -281,7 +282,6 @@
         }
         .carousel-indicators {
             margin-bottom: 500px;
-            /* margin-bottom: -20px; */
         }
     }
     
@@ -344,7 +344,6 @@
         .dws-wrapper {
             top: 60%;
             left: 70%;
-            /* transform: translate(-50%, -50%); */
         }
         .carousel-inner {
             width: 140%;

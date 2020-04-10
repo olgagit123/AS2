@@ -1,4 +1,4 @@
-/* I've 2 fonts */
+/* I've chosen 2 fonts */
 
 @import url('https://fonts.googleapis.com/css?family=Roboto|Playfair+Display" rel="stylesheet">');
 body {
@@ -14,7 +14,7 @@ body {
 /* menu settings and animation */
 
 
-/* resource: https://www.youtube.com/watch?v=F-mvXKKoSCU; */
+/* source: https://www.youtube.com/watch?v=F-mvXKKoSCU; */
 
 #menu {
     width: 35px;
@@ -115,7 +115,7 @@ img {
 }
 
 
-/* image on background (contact.html) */
+/*  background image (contact.html) */
 
 header {
     height: 100vh;
@@ -129,7 +129,7 @@ header {
 }
 
 
-/* contact.html contact information in center page */
+/* contact.html contact information in the center of the page */
 
 .main h1 {
     margin-top: 20px;
@@ -170,10 +170,10 @@ address {
 }
 
 
-/* ball settings and  animation*/
+/*the bouncing ball settings and  animation*/
 
 
-/* resource: https://www.youtube.com/watch?v=ghphLDzGVCA */
+/* source: https://www.youtube.com/watch?v=ghphLDzGVCA */
 
 .ball {
     position: absolute;
@@ -221,10 +221,10 @@ address {
 }
 
 
-/* button settings and animations "contact me" button (contact page) */
+/*  settings and animations of "contact me" button (contact page) */
 
 
-/* resource: https://www.youtube.com/watch?v=jgbDnDirM9s */
+/* source: https://www.youtube.com/watch?v=jgbDnDirM9s */
 
 .ddt {
     position: absolute;
@@ -281,15 +281,12 @@ address {
 
 /* PORTFOLIO1.html    */
 
-
-/* img carousel */
-
 section {
     background: black;
 }
 
 
-/* name page settings and animation */
+/*  settings and animation of "My works" title */
 
 h2 {
     position: absolute;
@@ -321,7 +318,7 @@ h2 span {
 }
 
 
-/* img settings */
+/* images settings */
 
 .carousel {
     margin-top: -50px;
@@ -352,10 +349,10 @@ h2 span {
 }
 
 
-/* button settings */
+/*  "Home" button settings */
 
 
-/* resouce: https://www.youtube.com/watch?v=ex7jGbyFgpA */
+/* souce: https://www.youtube.com/watch?v=ex7jGbyFgpA */
 
 .but {
     position: relative;
@@ -387,7 +384,7 @@ h2 span {
 }
 
 
-/* button strips */
+/* button stripes */
 
 .but span:nth-child(1) {
     top: 0;
@@ -444,6 +441,9 @@ h2 span {
     transition-delay: 0.75s;
 }
 
+
+/* Responsive pages */
+
 @media all and (max-width:927px) {
     h2 {
         margin-left: 300px;
@@ -485,7 +485,6 @@ h2 span {
 
 @media all and (max-width:580px) {
     h2 {
-        /* margin-top: 10px; */
         margin-left: 200px;
         font-size: 30px;
         letter-spacing: 0.1em;
