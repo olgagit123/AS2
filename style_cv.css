@@ -318,6 +318,16 @@ h2 span {
 }
 
 
+/* link settings */
+
+.link_name {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+}
+
+
 /* images settings */
 
 .carousel {
